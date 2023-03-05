@@ -8,10 +8,11 @@
     <link rel="shortcut icon" href="kepek/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <!--Carusel-->
 
-<body>
+<body style="background-color: red;">
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -64,9 +65,17 @@
                         <a class="nav-link" href="#hirek">Hírek</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">Jegyvásárlás
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#"><!-- Button trigger modal -->
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                Jegyvásárlás
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                                  </svg>
+                                Bejelentkezés
                             </button>
 
                             <!-- Modal -->
@@ -76,69 +85,49 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Bejelentkezés</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            Sajnáljuk, de jelenleg nincsen megjeleníthető jegy.
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Email-cím:</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text">Senkivel sem fogjuk megosztani az e-mail címét</div>
+                                                </div>
+                                                <label for="inputPassword5" class="form-label">Jelszó:</label>
+                                                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                                                <div id="passwordHelpBlock" class="form-text">
+                                                  A jelszónak 8-20 karakter közé kell esnie, tartalmaznia kell betűt és számot egyaránt, nem tartalmazhat szóközt, speciális karaktert vagy bármiféle emojit!
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Emlékezz rám</label>
+                                                </div>
+                                                <div class="form-text">Nincs fiókja? <a href="">Regisztráljon!</a></div>
+                                            </form>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Bezárás</button>
-                                            <button type="button" class="btn btn-primary">Rendben</button>
+                                            <button type="button" class="btn btn-primary"><a class="text-decoration-none text-white" href="sikeresbejelentkezes.html" target="_blank">Bejelentkezés</a></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </li>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--Cards-->
-    <div id="hirek" class="container mt-5">
-        <div class="row justify-content-center text-center">
-            <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
-                <div class="card" style="height: 190px;">
-                    <img src="kepek/daka..png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Patson Daka felemelkedik az alkalomhoz! Nagyszerű varázslat volt
-                            Daka számára, aki a közelmúltban egy sor szemet gyönyörködtető előadással igazolta hírnevét.
-                            Ha ebben a formában tud maradni, akkor a Kolozsvari TK-ra továbbra is érdemes lesz figyelni.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
-                <div class="card" style="height: 190px;">
-                    <img src="kepek/david..png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Konaté ebben a szezonban először szerzett gólt, így a Kolozsvari TK 4-3-ra
-                            győzött a Liverpool ellen.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
-                <div class="card" style="height: 190px;">
-                    <img src="kepek/goldenboot..png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">A Kolozsvari TK-s Onana lett az UEFA Szuperkupa játékosa.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
-                <div class="card" style="height: 190px;">
-                    <img src="kepek/fej4..png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text"> A Kolozsvari TK kedvezőnek tűnő sorsolást kapott, az Interrel, a Hajduk Splittel és az AS Monacóval a H-csoport tagjaként. Kolozsvári biztos abban, hogy csapatát a csoport élére tudja vezetni, és a tervek szerint az első találkozót is megvívják.  helyért szeptember 16-án az Inter ellen.
-                    </p>
-                    </div>
-                  </div>
-            </div>
+    <!--rolunk-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-2"></div>
         </div>
     </div>
 
