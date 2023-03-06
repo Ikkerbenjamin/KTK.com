@@ -4,3 +4,9 @@
 .nav-link {
     transition: all 0.2;
 }
+hr {
+    border-bottom: 1px solid black;
+}
+#kartya {
+    border: none;
+}
