@@ -1,12 +1,20 @@
 .nav-link:hover {
     border-bottom: 2px solid black;
 }
+
 .nav-link {
     transition: all 0.2;
 }
+
 hr {
     border-bottom: 1px solid black;
 }
+
 #kartya {
     border: none;
+}
+
+video {
+    display: block;
+    margin: auto;
 }
