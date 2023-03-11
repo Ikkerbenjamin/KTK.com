@@ -18,3 +18,17 @@ video {
     display: block;
     margin: auto;
 }
+
+#footer {
+    border-top: 10px solid red;
+    background-color: #303030;
+}
+#footer a {
+    color: white;
+}
+#frisshirek {
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    padding: 0 1px 0 1px;
+    margin-bottom: 30px;
+}
